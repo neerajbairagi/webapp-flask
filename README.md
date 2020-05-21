@@ -38,3 +38,16 @@ Open a browser and go to URL
 
     http://<IP>:5000                            => Hello Everyone
     http://<IP>:5000/how%20are%20you            => ITE BHOPAL !
+    
+    
+## 0. Lab
+yum install git -y
+git clone https://github.com/sonulodha/webapp-flask.git
+cd webapp
+ls
+docker build -t mitrasonu/webapp
+docker push mitrasonu/webapp
+docker images
+docker run --name app1 -p :8080 mitrasonu/webapp
+docker ps 
+firefox ip:8080
