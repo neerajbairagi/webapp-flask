@@ -48,6 +48,6 @@ ls
 docker build -t mitrasonu/webapp
 docker push mitrasonu/webapp
 docker images
-docker run --name app1 -p :8080 mitrasonu/webapp
+docker run --name app1 -p 8080:8080 mitrasonu/webapp
 docker ps 
 firefox ip:8080
